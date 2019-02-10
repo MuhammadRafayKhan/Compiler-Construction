@@ -1,0 +1,6 @@
+E:\A.UNI\FIFTH SEMESTER\COMPILER CONSTRUCTION\lab\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+E:\A.UNI\FIFTH SEMESTER\COMPILER CONSTRUCTION\lab\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+E:\A.UNI\FIFTH SEMESTER\COMPILER CONSTRUCTION\lab\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+E:\A.UNI\FIFTH SEMESTER\COMPILER CONSTRUCTION\lab\Assignment1\Assignment1\obj\Debug\Assignment1.csprojResolveAssemblyReference.cache
+E:\A.UNI\FIFTH SEMESTER\COMPILER CONSTRUCTION\lab\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+E:\A.UNI\FIFTH SEMESTER\COMPILER CONSTRUCTION\lab\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
