@@ -1,0 +1,6 @@
+D:\compiler construction\tokenization\tokenization\bin\Debug\tokenization.exe.config
+D:\compiler construction\tokenization\tokenization\bin\Debug\tokenization.exe
+D:\compiler construction\tokenization\tokenization\bin\Debug\tokenization.pdb
+D:\compiler construction\tokenization\tokenization\obj\Debug\tokenization.csprojResolveAssemblyReference.cache
+D:\compiler construction\tokenization\tokenization\obj\Debug\tokenization.exe
+D:\compiler construction\tokenization\tokenization\obj\Debug\tokenization.pdb

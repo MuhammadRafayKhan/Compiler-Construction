@@ -1,0 +1,111 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Dictionary_With_tokenization
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<string, string> DictOp = new Dictionary<string, string>();
+
+            DictOp.Add("+", "Add");
+            DictOp.Add("*", "Multiply");
+            DictOp.Add("-", "Subtract");
+            DictOp.Add("/", "Divide");
+            DictOp.Add("!", "Not");
+            DictOp.Add("$$", "And");
+            DictOp.Add("||", "Or");
+            DictOp.Add("==", "Equal");
+            DictOp.Add("?", "Question Mark");
+            DictOp.Add("(", "Open Round Bracket");
+            DictOp.Add(")", "Close Round Bracket");
+            DictOp.Add("{", "Open Curly Bracket");
+            DictOp.Add("}", "Close Curly Bracket");
+            DictOp.Add("@", "At The Rate");
+            DictOp.Add("#", "Hash");
+            DictOp.Add("%", "Remainder");
+            DictOp.Add("^", "Exponent");
+            DictOp.Add("=", "Assignment");
+            DictOp.Add("&", "Address");
+            DictOp.Add("$", "Dollar");
+            DictOp.Add("_", "Under Score");
+            DictOp.Add(";", "Semi Colon");
+            DictOp.Add(",", "Comma");
+            DictOp.Add(":", "Colon");
+            DictOp.Add("<", "Less than");
+            DictOp.Add(">", "Greater than");
+            DictOp.Add(">>", "Shift Right");
+            DictOp.Add("<<", "Shift Left");
+            DictOp.Add("++", "Increament");
+            DictOp.Add("--", "Decreament");
+            DictOp.Add("<=", "Less than equal to");
+            DictOp.Add(">=", "Greater than equal to");
+            DictOp.Add("int", "Keyword");
+            DictOp.Add("float", "Keyword");
+            DictOp.Add("char", "Keyword");
+            DictOp.Add("string", "Keyword");
+            DictOp.Add("bool", "Keyword");
+            DictOp.Add("goto", "Keyword");
+            DictOp.Add("break", "Keyword");
+            DictOp.Add("if", "Keyword");
+            DictOp.Add("continue", "Keyword");
+            DictOp.Add("switch", "Keyword");
+            DictOp.Add("default", "Keyword");
+            DictOp.Add("else", "Keyword");
+            DictOp.Add("is", "Keyword");
+            DictOp.Add("New", "Keyword");
+            DictOp.Add("try", "Keyword");
+            DictOp.Add("catch", "Keyword");
+            DictOp.Add("foreach", "Keyword");
+            DictOp.Add("for", "Keyword");
+            DictOp.Add("do", "Keyword");
+            DictOp.Add("while", "Keyword");
+            DictOp.Add("main", "Keyword");
+            DictOp.Add("0", "Number");
+            DictOp.Add("1", "Number");
+            DictOp.Add("2", "Number");
+            DictOp.Add("3", "Number");
+            DictOp.Add("4", "Number");
+            DictOp.Add("5", "Number");
+            DictOp.Add("6", "Number");
+            DictOp.Add("7", "Number");
+            DictOp.Add("8", "Number");
+            DictOp.Add("9", "Number");
+            DictOp.Add("10", "Number");
+
+            Console.WriteLine("\nEnter your Code here : ");
+            string code = Console.ReadLine();
+            Console.WriteLine("Your Tokens are : \n");
+            string[] tokens = code.Split(' '); 
+            //int counter = 0;
+            int j = 0;
+            for (int i = 0 ; i < tokens.Length; i++)
+            {
+                int counter = 0; 
+                foreach(KeyValuePair<string,string> s in DictOp)
+                {
+                    if(s.Key==tokens[i])
+                    {
+                        j = i + 1;
+                        Console.WriteLine("Token # "+ j + " <" + tokens[i] + "," + DictOp[tokens[i]] + ">\n");
+                        counter++;
+                        break;
+                    }
+                }
+
+                if(counter==0)
+                {
+                    j = i + 1;
+                    Console.WriteLine("Token # " + j + " <" + tokens[i] + ",Identifier>\n");
+                }
+            }
+
+            Console.ReadKey();
+            
+        }
+    }
+}
